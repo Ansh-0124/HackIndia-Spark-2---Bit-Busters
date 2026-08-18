@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,123 +7,236 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="Image/png" href="logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <title>कलाᧁꫝꪖ᥅</title>
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>कलाᧁꫝꪖ᥅ | NFT Marketplace</title>
 </head>
 
-<body class="overflow-y-hidden h-[100vh]">
-    <nav class="bg-white h-[12vh] w-[100vw] fixed z-[5] shadow-2xl shadow-gray-500">
-        <div class="h-20 flex items-center align-middle justify-between flex-row mr-32 ml-32">
-            <img class="h-12 w-12 rounded-lg " src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="logo">
-            <div class="text-xl space-x-11 justify-end ">
-                <a class="hover:underline " href="">Home</a>
-                <a class="hover:underline" href="Aboutus.html">About Us</a>
-                <a class="hover:underline" href="gallery.html">Gallery</a>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <img class="h-12 w-12 rounded-xl border border-purple-500/30 shadow-lg shadow-purple-500/20" src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="KalaGhar Logo">
+                    <span class="font-bold text-2xl tracking-tight text-white">कलाᧁꫝꪖ᥅</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-purple-400 font-medium transition-colors">Home</a>
+                    <a href="gallery.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Marketplace</a>
+                    <a href="aboutus.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">About Us</a>
+                </div>
 
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-medium px-4 py-2 transition-colors">Sign In</a>
+                    <a href="signup.html" class="btn-primary px-6 py-2 rounded-full font-medium shadow-lg">Connect Wallet</a>
+                </div>
             </div>
         </div>
     </nav>
-    <main class="overflow-y-scroll h-[100vh] snap-y">
-        <!-- <div class="h-[100vh] snap-y overflow-y-scroll"> -->
-        <div
-            class="flex relative flex-row snap-center snap-proximity bg-black h-[100vh] justify-center items-center space-x-36">
 
-            <img class="h-[30rem] rounded-xl shadow-2xl shadow-gray-500 z-[4] left-[20vw] absolute hover:h-[32rem] duration-200"
-                src="661e6b67c1c754283fdfb204_Screen-Shot-2022-02-15-at-1.43.50-PM copy.png">
-            <img class="h-[20rem] rounded-xl shadow-2xl shadow-gray-500 z-[1] left-[-1vw] top-[15vh] absolute hover:h-[22rem] hover:z-[4] duration-200"
-                src="WhatsApp Image 2024-08-06 at 21.55.12 copy.jpeg">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Gradients -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600/20 rounded-full blur-[120px]"></div>
 
-            <div id="flt" class=" w-[30rem] text-white right-[10vw] top-[17rem] absolute">
-                <span class="text-5xl font-semibold text-yellow-500"><span class="text-xl text-white">Dive into the
-                        realm of Art with</span> कलाᧁꫝꪖ᥅ </span>
-
-            </div>
-            <div class="flex">
-                <button
-                    class="bg-white text-2xl hover:underline font-semibold text-black rounded-3xl mt-16 ml-[42rem] p-1 pl-4 pr-4 "><a
-                        href="login.html">Sign In</a></button>
-                <button
-                    class="bg-yellow-500 text-2xl font-semibold hover:underline text-white rounded-3xl mt-16 ml-5 p-1 pl-4 pr-4 "><a
-                        href="signup.html">Sign Up</a></button>
-            </div>
-
-        </div>
-        <div class="flex flex-row snap-center snap-proximity bg-white h-[100vh] justify-center items-center space-x-36">
-            <div class="w-[30rem]">
-                <span class="text-2xl font-semibold">Crossroard
-                    <br>
-                    Artist: Mike Winkelmann aka Beeple
-                    </span>
-                <p class="justify-center text-xl mt-4">
-                    This Beeple’s NFT is his third most expensive. This cartoonish artistic piece of Donald Trump called “crossroad” highlights a succession of messages hostile to him. This very original artwork was designed to change depending on the outcome of the US presidential election. If the outgoing president had won the election, the final facet of the work would have featured Donald Trump wearing a crown on his head and going through flames.
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Dive into the realm of <br>
+                    <span class="text-gradient">Digital Art</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-lg">
+                    Discover, collect, and trade extraordinary NFTs from world-class creators on the most premium marketplace.
                 </p>
-            </div>
-            <img class="h-[30rem] rounded-xl shadow-2xl shadow-black" src="Crossroad-Beeple-Metav.rs-NFT-715x728.jpg">
-        </div>
-        <div
-            class="flex flex-row snap-center snap-proximity bg-green-600 h-[100vh] justify-center items-center space-x-36">
-            <img class="h-[30rem] rounded-xl shadow-2xl shadow-black " src="Xcopy-All-Time-High-in-the-City-NFT copy.gif">
-            <div class="w-[30rem] text-white">
-                <span class="text-2xl font-semibold">All Time High in the City
-                    <br> 
-                    Artist: XCopy
-                    
-                    </span>
-                <p class="justify-center text-xl mt-4">
-                    This XCopy NFT got sold in January 2022. The animated artwork portrays the ferryman of the underworld carrying a man across the river Styx.
-                </p>
-            </div>
-        </div>
-        <div class="flex flex-row  bg-white h-[100vh] justify-center items-center space-x-36">
-            <div class="w-[30rem]">
-                <span class="text-2xl font-semibold">FreeRoss
-                    <br> 
-                    Artist: Ross Ulbricht
-                    
-                    </span>
-                <p class="justify-center text-xl mt-4">"Ross Ulbricht’s inaugural NFT named FreeRoss earned an astounding $6.12 million. This happened in December 2021 after being auctioned for six days. The proceeds of this Ross Ulbricht Genesis NFT Collection contributed to the creator's legal defense but also to establish a donor-advised fund named Art4Giving. The purpose of the fund is to alleviate the suffering of incarcerated individuals and their families."</p>
-            </div>
-            <img class="h-[20rem] rounded-xl shadow-2xl shadow-black" src="FreeRoss-NFT-by-Ross-Ulbricht copy.webp">
-        </div>
-
-        <!-- </div> -->
-        <footer class="bg-white rounded-lg shadow m-2 h-44">
-            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                <div class="sm:flex sm:items-center sm:justify-between">
-                    <a href="https://flowbite.com/"
-                        class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" class="h-8" alt="Flowbite Logo" />
-                        <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">KalaGhar</span>
+                <div class="flex flex-wrap gap-4">
+                    <a href="gallery.html" class="btn-primary px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-2">
+                        Explore Gallery <i class="fas fa-arrow-right"></i>
                     </a>
-                    <ul
-                        class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                        </li>
-                    </ul>
+                    <a href="#featured" class="btn-secondary px-8 py-3.5 rounded-full font-semibold text-lg">
+                        Learn More
+                    </a>
                 </div>
-                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#home"
-                        class="hover:underline">कलाᧁꫝꪖ᥅™</a>. All Rights Reserved.</span>
+                
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-slate-700/50">
+                    <div>
+                        <h4 class="text-3xl font-bold text-white">43K+</h4>
+                        <p class="text-slate-400 text-sm">Artworks</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-bold text-white">12K+</h4>
+                        <p class="text-slate-400 text-sm">Artists</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-bold text-white">89K+</h4>
+                        <p class="text-slate-400 text-sm">Auctions</p>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </main>
 
+            <!-- Image Composition -->
+            <div class="relative h-[600px] hidden lg:block" data-aos="fade-left" data-aos-duration="1000">
+                <!-- Main floating image -->
+                <div class="absolute top-10 right-10 w-[400px] z-20 animate-float" style="animation-delay: 0s;">
+                    <img src="661e6b67c1c754283fdfb204_Screen-Shot-2022-02-15-at-1.43.50-PM copy.png" 
+                         class="w-full h-auto rounded-2xl shadow-2xl border border-white/10" alt="Featured NFT">
+                </div>
+                <!-- Background floating image -->
+                <div class="absolute bottom-10 left-0 w-[300px] z-10 animate-float" style="animation-delay: -2s;">
+                    <img src="WhatsApp Image 2024-08-06 at 21.55.12 copy.jpeg" 
+                         class="w-full h-auto rounded-2xl shadow-2xl border border-white/10 opacity-80" alt="Secondary NFT">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Featured Collections -->
+    <section id="featured" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Legendary <span class="text-gradient">Collections</span></h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Explore some of the most iconic and highly valued digital artworks in existence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass-card overflow-hidden group cursor-pointer" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="Crossroad-Beeple-Metav.rs-NFT-715x728.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Crossroad">
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                            <i class="fab fa-ethereum text-purple-400 mr-1"></i> 6.6M
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Crossroad</h3>
+                        <p class="text-purple-400 text-sm font-medium mb-4">by Beeple</p>
+                        <p class="text-slate-400 text-sm line-clamp-3">
+                            This Beeple's NFT highlights a succession of messages. The artwork was designed to change depending on the outcome of the US presidential election.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card overflow-hidden group cursor-pointer" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="Xcopy-All-Time-High-in-the-City-NFT copy.gif" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Xcopy">
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                            <i class="fab fa-ethereum text-purple-400 mr-1"></i> 2.9M
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">All Time High</h3>
+                        <p class="text-purple-400 text-sm font-medium mb-4">by XCopy</p>
+                        <p class="text-slate-400 text-sm line-clamp-3">
+                            The animated artwork portrays the ferryman of the underworld carrying a man across the river Styx.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card overflow-hidden group cursor-pointer" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="FreeRoss-NFT-by-Ross-Ulbricht copy.webp" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="FreeRoss">
+                        <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold border border-white/10">
+                            <i class="fab fa-ethereum text-purple-400 mr-1"></i> 6.12M
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">FreeRoss</h3>
+                        <p class="text-purple-400 text-sm font-medium mb-4">by Ross Ulbricht</p>
+                        <p class="text-slate-400 text-sm line-clamp-3">
+                            This Genesis NFT Collection contributed to establish a donor-advised fund named Art4Giving to alleviate suffering.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="gallery.html" class="btn-secondary px-8 py-3 rounded-full font-semibold inline-block">
+                    View All Collections
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900/50 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start mb-6 md:mb-0">
+                    <div class="flex items-center gap-3">
+                        <img src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" class="h-10 w-10 rounded-lg border border-purple-500/30" alt="Logo" />
+                        <span class="text-2xl font-bold text-white">KalaGhar</span>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">Discord</span>
+                        <i class="fab fa-discord text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-base text-slate-400">
+                    &copy; 2024 <span class="font-bold">कलाᧁꫝꪖ᥅™</span>. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6 text-sm text-slate-400">
+                    <a href="aboutus.html" class="hover:text-white">About</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botpress Chatbot Integration -->
+    <div class="z-[100]">
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/7623e1f9-32ac-4624-a936-95ba7e6e2b88/webchat/config.js" defer></script>
+    </div>
+
+    <!-- Scripts for animations and 3D effects -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg', 'shadow-purple-900/10');
+                nav.classList.remove('border-transparent');
+            } else {
+                nav.classList.remove('shadow-lg', 'shadow-purple-900/10');
+            }
+        });
+    </script>
 </body>
-<div class="z-[100]">
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/7623e1f9-32ac-4624-a936-95ba7e6e2b88/webchat/config.js" defer></script>
-</div>
 </html>

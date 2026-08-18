@@ -5,83 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="Image/png" href="logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="aboutus.css">
-    <title>About Us</title>
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>कलाᧁꫝꪖ᥅ | About Us</title>
 </head>
 
-<body class="overflow-x-clip overscroll-y-none">
-    <nav class="bg-white h-[12vh]">
-        <div class="h-20 flex items-center align-middle justify-between flex-row mr-32 ml-32">
-            <img class="h-12 w-12 rounded-lg " src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="logo">
-            <div class="text-xl space-x-11 justify-end ">
-                <a class="hover:underline " href="index.html">Home</a>
-                <a class="hover:underline" href="gallery.html">Gallery</a>
-                <button class="bg-yellow-500 hover:underline p-1 pl-2 pr-2 rounded-md text-white"><a
-                        href="signup.html">Sign Up</a></button>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300 shadow-lg shadow-purple-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img class="h-12 w-12 rounded-xl border border-purple-500/30 shadow-lg shadow-purple-500/20" src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="KalaGhar Logo">
+                        <span class="font-bold text-2xl tracking-tight text-white">कलाᧁꫝꪖ᥅</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Home</a>
+                    <a href="gallery.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Marketplace</a>
+                    <a href="aboutus.html" class="text-white hover:text-purple-400 font-medium transition-colors">About Us</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-medium px-4 py-2 transition-colors">Sign In</a>
+                    <a href="signup.html" class="btn-primary px-6 py-2 rounded-full font-medium shadow-lg">Connect Wallet</a>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="h-[88vh] w-[100vw] overflow-hidden">
-        <video autoplay muted loop id="myVideo">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <div
-            class="absolute bottom-10 rounded-xl opacity-70 bg-white text-black ml-40 mr-40 p-5 pl-[10vw] pr-[10vw] h-[35rem]">
-            <h1 class="font-extrabold text-3xl p-2 hover:underline">Vision</h1>
-            <p class=" text-xl pl-3">To emerge as a leading art organisation.</p>
-            <h1 class="font-extrabold text-3xl p-2 mt-4 hover:underline">Mission</h1>
-            <p class="text-xl pl-3">To connect all the art enthusiasts around the world at a single place and
-                help grow the world of art for a creative and artistic tomorrow.</p>
-            <hr class="mt-4">
-            <h1 class="font-extrabold text-3xl p-2 mt-4 hover:underline">About Us</h1>
-            <p class=" text-xl pl-3 mt-1">We are team KalaGhar, an emerging organisation in the art industry
-                creating an antistic environment for the emerging artworks around the Globe. Our web page is helping the
-                new and the veteran artist by providing them a platform to showcase their art skills and introduce
-                themselves and their artwork to the world!</p>
-            <p class="text-xl pl-3 mt-4" ">We are building a community to spread the awareness about art
-                to the unknown population of the Globe. We will further introduce features which will help us grow this
-                community and provide a better future for the Art and the Artists.</p>
 
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-down">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">About <span class="text-gradient">KalaGhar</span></h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+                Welcome to KalaGhar – your ultimate destination for everything NFT. Whether you're an artist looking to mint your first collection, or a collector seeking the next big digital masterpiece, we provide the platform to make it happen.
+            </p>
         </div>
-    </div>
+    </section>
 
-</body>
-<footer class=" bg-white rounded-lg shadow h-44 w-[100vw]">
-            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                <div class="sm:flex sm:items-center sm:justify-between">
-                    <a href="https://flowbite.com/"
-                        class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" class="h-8" alt="Flowbite Logo" />
-                        <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">KalaGhar</span>
-                    </a>
-                    <ul
-                        class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                        </li>
-                    </ul>
+    <!-- Mission Section -->
+    <section class="py-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 md:p-12" data-aos="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Our <span class="text-gradient-gold">Mission</span></h2>
+                        <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+                            KalaGhar stands for "Art House" in Hindi. Our mission is to bridge the gap between traditional artistry and the modern blockchain revolution.
+                        </p>
+                        <p class="text-slate-300 text-lg leading-relaxed">
+                            We empower creators by providing them with tools to tokenize their work, ensuring provenance, royalties, and true ownership in a decentralized ecosystem.
+                        </p>
+                    </div>
+                    <div class="relative h-64 md:h-full rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="661e6b67c1c754283fdfb204_Screen-Shot-2022-02-15-at-1.43.50-PM copy.png" alt="Mission" class="w-full h-full object-cover">
+                    </div>
                 </div>
-                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#home"
-                        class="hover:underline">KalaGhar™</a>. All Rights Reserved.</span>
             </div>
+        </div>
+    </section>
 
-            </footer>
-            <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-            <script src="https://mediafiles.botpress.cloud/7623e1f9-32ac-4624-a936-95ba7e6e2b88/webchat/config.js"
-                defer></script>
+    <!-- Features -->
+    <section class="py-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-purple-600/20 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/30">
+                        <i class="fas fa-palette text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Empowering Artists</h3>
+                    <p class="text-slate-400">We give creators 100% control over their smart contracts and royalties.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto bg-pink-600/20 rounded-2xl flex items-center justify-center mb-6 border border-pink-500/30">
+                        <i class="fas fa-shield-alt text-2xl text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Secure & Verified</h3>
+                    <p class="text-slate-400">All collections are verified to prevent fraud and protect our collectors.</p>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto bg-blue-600/20 rounded-2xl flex items-center justify-center mb-6 border border-blue-500/30">
+                        <i class="fas fa-globe text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Global Community</h3>
+                    <p class="text-slate-400">Join thousands of Web3 enthusiasts in building the future of art.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900/50 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start mb-6 md:mb-0">
+                    <div class="flex items-center gap-3">
+                        <img src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" class="h-10 w-10 rounded-lg border border-purple-500/30" alt="Logo" />
+                        <span class="text-2xl font-bold text-white">KalaGhar</span>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6 md:order-2">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-discord text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-base text-slate-400">
+                    &copy; 2024 <span class="font-bold">कलाᧁꫝꪖ᥅™</span>. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6 text-sm text-slate-400">
+                    <a href="aboutus.html" class="hover:text-white">About</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+    </script>
+</body>
 </html>

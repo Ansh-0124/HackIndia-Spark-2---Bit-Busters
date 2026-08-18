@@ -5,75 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="Image/png" href="logo.png">
-    <title>Gallery</title>
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>कलाᧁꫝꪖ᥅ | NFT Marketplace Gallery</title>
 </head>
 
-<body>
-    <nav class="bg-white h-[12vh]">
-        <div class="h-20 flex items-center align-middle justify-between flex-row mr-32 ml-32">
-            <img class="h-12 w-12 rounded-lg " src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="logo">
-            <div class="text-xl space-x-11 justify-end ">
-                <a class="hover:underline " href="index.html">Home</a>
-                <a class="hover:underline" href="">Gallery</a>
-                <button class="bg-yellow-500 hover:underline p-1 pl-2 pr-2 rounded-md text-white"><a
-                        href="login.html">Sign In</a></button>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300 shadow-lg shadow-purple-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img class="h-12 w-12 rounded-xl border border-purple-500/30 shadow-lg shadow-purple-500/20" src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="KalaGhar Logo">
+                        <span class="font-bold text-2xl tracking-tight text-white">कलाᧁꫝꪖ᥅</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Home</a>
+                    <a href="gallery.html" class="text-white hover:text-purple-400 font-medium transition-colors">Marketplace</a>
+                    <a href="mint.html" class="protected-nav hidden text-slate-300 hover:text-purple-400 font-medium transition-colors">Create</a>
+                    <a href="aboutus.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">About Us</a>
+                    <a href="profile.html" class="protected-nav hidden text-slate-300 hover:text-purple-400 font-medium transition-colors">Profile</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="connect-wallet-btn btn-primary px-6 py-2 rounded-full font-medium shadow-lg transition-all duration-300">Connect Wallet</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main>
-        
-        <section class="products">
-            <br>
-            <h2 class="text-3xl font-bold mr-96">ART GALLERY</h2>
-            <div class="product category1">
-                <img class="" src="image.png" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Oil Painting of a Thinking-Man </p>
-                <button class="hover:underline">Bid</button>
-            </div>
-            <div class="product category2">
-                <img src="WhatsApp Image 2024-08-06 at 22.45.19 copy.jpeg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>Folk Abstract Art</p>
-                <p>Artist : Chen Yingje</p>
-                <button class="hover:underline">Bid</button>
-            </div>
-            <div class="product category1">
-                <img src="WhatsApp Image 2024-08-06 at 22.50.11 copy.jpeg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>Canvas of Woods</p>
-                <button class="hover:underline">Bid</button>
-            </div>
-            <div class="product category2">
-                <img src="WhatsApp Image 2024-08-06 at 22.53.11 copy.jpeg" alt="Product 4">
-                <h3>Product 4</h3>
-                <p>Painting of a Watcher</p>
-                <button class="hover:underline">Coming Soon!</button>
-            </div>
-            <div class="product category1">
-                <img src="a14.jpg" alt="Product 5">
-                <h3>Product 5</h3>
-                <p>Autumn Sunset</p>
-                <button class="hover:underline">Coming Soon!</button>
-            </div>
-            <div class="product category2">
-                <img src="a15.jpg" alt="Product 6">
-                <h3>Product 6</h3>
-                <p>A Man's painting a painting</p>
-                <button class="hover:underline">Coming Soon!</button>
-            </div>
-            <div class="product category1">
-                <img src="WhatsApp Image 2024-08-06 at 23.02.31 copy.jpeg" alt="Product 7">
-                <h3>Product 7</h3>
     <!-- Header Section -->
     <section class="pt-32 pb-12 relative overflow-hidden">
         <div class="absolute top-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
@@ -87,15 +59,15 @@
     <section class="py-6 border-y border-slate-800 bg-slate-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex space-x-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
-                    <button class="px-4 py-2 rounded-full bg-purple-600 text-white font-medium text-sm whitespace-nowrap">All NFTs</button>
-                    <button class="px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors">Trending</button>
-                    <button class="px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors">Art</button>
-                    <button class="px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors">Photography</button>
+                <div class="flex space-x-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0" id="category-filters">
+                    <button class="filter-btn active px-4 py-2 rounded-full bg-purple-600 text-white font-medium text-sm whitespace-nowrap" data-category="all">All NFTs</button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors" data-category="trending">Trending</button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors" data-category="art">Art</button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700 font-medium text-sm whitespace-nowrap transition-colors" data-category="photography">Photography</button>
                 </div>
                 
                 <div class="relative w-full md:w-64">
-                    <input type="text" placeholder="Search NFTs..." class="w-full bg-slate-800 border border-slate-700 rounded-full pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+                    <input type="text" id="search-input" placeholder="Search NFTs..." class="w-full bg-slate-800 border border-slate-700 rounded-full pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
                     <i class="fas fa-search absolute left-4 top-2.5 text-slate-400"></i>
                 </div>
             </div>
@@ -122,18 +94,9 @@
                     </div>
                 </div>
                 <div class="flex justify-center space-x-6 md:order-2">
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <span class="sr-only">Twitter</span>
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <span class="sr-only">Discord</span>
-                        <i class="fab fa-discord text-xl"></i>
-                    </a>
-                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
-                        <span class="sr-only">GitHub</span>
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-discord text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
                 </div>
             </div>
             <div class="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -148,29 +111,155 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Simulated Bidding Modal -->
+    <div id="bidding-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+        <div class="glass-card w-full max-w-md p-6 relative" data-aos="zoom-in" data-aos-duration="300">
+            <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-white"><i class="fas fa-times text-xl"></i></button>
+            <h3 class="text-2xl font-bold mb-1">Place a Bid</h3>
+            <p class="text-slate-400 text-sm mb-6">You are bidding on <span id="modal-nft-title" class="font-semibold text-white">NFT Name</span></p>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-slate-300 mb-2">Bid Amount (ETH)</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fab fa-ethereum text-purple-400"></i>
+                    </div>
+                    <input type="number" id="bid-amount" step="0.01" class="w-full bg-slate-800 border border-slate-700 rounded-lg pl-10 pr-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors" placeholder="0.00">
+                </div>
+            </div>
+            
+            <div class="flex justify-between items-center mb-6 text-sm">
+                <span class="text-slate-400">Current Balance:</span>
+                <span class="text-white font-semibold"><i class="fab fa-ethereum text-purple-400 mr-1"></i> 10.5 ETH</span>
+            </div>
+            
+            <button id="confirm-bid" class="w-full btn-primary py-3 rounded-lg font-bold">Confirm Bid</button>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    
-    <!-- Load NFT Data -->
+    <script src="wallet.js"></script>
     <script src="data.js"></script>
     
     <script>
+        // Initialize AOS animations
+        AOS.init({ once: true, offset: 50 });
 
-            products.forEach(product => {
-                if (selectedCategory === 'all' || product.classList.contains(selectedCategory)) {
-                    product.style.display = 'block';
-                } else {
-                    product.style.display = 'none';
-                }
+        // Render Gallery function
+        const galleryContainer = document.getElementById('gallery-container');
+        
+        function renderGallery(dataToRender) {
+            if (!galleryContainer) return;
+            galleryContainer.innerHTML = ''; // clear current
+            
+            dataToRender.forEach((nft, index) => {
+                const delay = (index % 4) * 100;
+                
+                const card = document.createElement('div');
+                card.className = "glass-card overflow-hidden group flex flex-col h-full";
+                card.setAttribute('data-aos', 'fade-up');
+                card.setAttribute('data-aos-delay', delay.toString());
+                
+                card.innerHTML = `
+                    <div class="relative h-56 overflow-hidden cursor-pointer" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.15">
+                        <img src="${nft.image}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="${nft.title}" onerror="this.src='https://via.placeholder.com/400x300?text=NFT+Image'">
+                        <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold border border-white/10">
+                            <i class="fab fa-ethereum text-purple-400 mr-1"></i> ${nft.price}
+                        </div>
+                    </div>
+                    <div class="p-5 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-1 line-clamp-1">${nft.title}</h3>
+                        <p class="text-purple-400 text-sm font-medium mb-3 line-clamp-1">by ${nft.artist}</p>
+                        <p class="text-slate-400 text-xs mb-4 line-clamp-2 flex-grow">
+                            ${nft.description}
+                        </p>
+                        <button onclick="openBidModal('${nft.title}')" class="w-full btn-secondary py-2 rounded-lg text-sm font-semibold hover:bg-purple-600 hover:border-purple-500 transition-colors">
+                            Place Bid
+                        </button>
+                    </div>
+                `;
+                
+                galleryContainer.appendChild(card);
             });
+            
+            VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+        }
+        
+        // Initial render
+        if (typeof nftData !== 'undefined') {
+            renderGallery(nftData);
+            
+            // Search functionality
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                const filtered = nftData.filter(nft => 
+                    nft.title.toLowerCase().includes(term) || 
+                    nft.artist.toLowerCase().includes(term) ||
+                    nft.description.toLowerCase().includes(term)
+                );
+                renderGallery(filtered);
+            });
+            
+            // Category filters (Simulated)
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    // Update active state classes
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-purple-600', 'text-white');
+                        b.classList.add('bg-slate-800', 'text-slate-300');
+                    });
+                    btn.classList.add('bg-purple-600', 'text-white');
+                    btn.classList.remove('bg-slate-800', 'text-slate-300');
+                    
+                    const cat = btn.getAttribute('data-category');
+                    if(cat === 'all') {
+                        renderGallery(nftData);
+                    } else {
+                        // Just a simulation: shuffle or slice the array based on category
+                        const shuffled = [...nftData].sort(() => 0.5 - Math.random());
+                        renderGallery(shuffled.slice(0, 4));
+                    }
+                });
+            });
+        }
+        
+        // Bidding Modal Logic
+        const modal = document.getElementById('bidding-modal');
+        function openBidModal(title) {
+            if(localStorage.getItem('walletConnected') !== 'true') {
+                alert("Please connect your wallet first!");
+                return;
+            }
+            document.getElementById('modal-nft-title').innerText = title;
+            document.getElementById('bid-amount').value = '';
+            modal.classList.remove('hidden');
+        }
+        
+        document.getElementById('close-modal').addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+        
+        document.getElementById('confirm-bid').addEventListener('click', () => {
+            const amt = document.getElementById('bid-amount').value;
+            if(!amt || amt <= 0) {
+                alert("Please enter a valid bid amount.");
+                return;
+            }
+            document.getElementById('confirm-bid').innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.getElementById('confirm-bid').innerText = 'Confirm Bid';
+                alert('Bid placed successfully!');
+            }, 1500);
         });
     </script>
     
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/7623e1f9-32ac-4624-a936-95ba7e6e2b88/webchat/config.js"
         defer></script>
-
 </body>
 </html>

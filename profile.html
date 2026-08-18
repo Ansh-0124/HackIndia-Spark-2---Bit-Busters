@@ -5,150 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-        <link rel="icon" type="icon/jpg" href="logo.png">
-    <title>Profile</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="Image/png" href="logo.png">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>कलाᧁꫝꪖ᥅ | User Profile</title>
 </head>
 
-<body>
-    <nav class="bg-white h-[12vh]">
-        <div class="h-20 flex items-center align-middle justify-between flex-row mr-32 ml-32">
-            <img class="h-12 w-12 rounded-lg " src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="logo">
-            <div class="text-xl space-x-11 justify-end ">
-                <a class="hover:underline " href="index.html">Home</a>
-                <a class="hover:underline" href="">Gallery</a>
-                <button class="bg-yellow-500 hover:underline p-1 pl-2 pr-2 rounded-md text-white"><a
-                        href="login.html">Sign In</a></button>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300 shadow-lg shadow-purple-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img class="h-12 w-12 rounded-xl border border-purple-500/30 shadow-lg shadow-purple-500/20" src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="KalaGhar Logo">
+                        <span class="font-bold text-2xl tracking-tight text-white">कलाᧁꫝꪖ᥅</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Home</a>
+                    <a href="gallery.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">Marketplace</a>
+                    <a href="mint.html" class="protected-nav hidden text-slate-300 hover:text-purple-400 font-medium transition-colors">Create</a>
+                    <a href="aboutus.html" class="text-slate-300 hover:text-purple-400 font-medium transition-colors">About Us</a>
+                    <a href="profile.html" class="protected-nav hidden text-white hover:text-purple-400 font-medium transition-colors">Profile</a>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="connect-wallet-btn btn-primary px-6 py-2 rounded-full font-medium shadow-lg transition-all duration-300">Connect Wallet</a>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="flex flex-row justify-between">
-        <div class="w-1/4 mt-20 ml-20 content-center">
-            <div class=" relative">
-                <img class="w-[80%] " src="WhatsApp Image 2024-08-06 at 22.34.55 copy.jpeg" alt="User Photo" class="profile-photo">
-            </div>
-            <center>
-                <div id="ucard" class="art-container">
-                    <span id="userMail" class="text-3xl">Aarnav Anand</span>
-                </div>
-                <div class="imageUpload">
-                    <input type="file"
-                        class="inp border-3 hover:bg-gray-400 text-white my-2 py-2 px-1 pl-7 rounded-md font-bold bg-[rgb(255,157,0)]"
-                        onchange="getImageData(event)" />
-                    <!-- <button onclick="selectImage()"
-                        class="selectImage border-3 hover:bg-gray-400 text-white my-2 py-2 px-5 rounded-md font-bold bg-[rgb(255,157,0)]">Select
-                        Images</button> -->
-                    <span class="filedata"></span>
-                    <div class="progressBar">
-                        <div class="progress"></div>
-                    </div>
-                    <button onclick="uploadImage()"
-                        class="upload border-3 hover:bg-gray-400 text-white my-2 py-2 px-5 rounded-md font-bold bg-[rgb(255,157,0)]">Upload</button>
-                    <!-- <span class="loading">Loading...</span> -->
-                    <!-- <img class="img" /> -->
-                </div>
 
-            </center>
-        </div>
-        <div class="grid grid-cols-3 grid-row-3 gap-4 ml-10 mt-10">
-            <div>
-                <img class="rounded-md" src="a4.jpg" alt="hello">
-            </div>
-            <div>
-                <img class="rounded-md" src="a10.jpg" alt="hello">
-            </div>
-            <div>
-                <img class="rounded-md" src="a11.jpg" alt="hello">
-            </div>
-
-
-
-        </div>
+    <!-- Profile Header Banner -->
+    <div class="w-full h-64 md:h-80 bg-gradient-to-r from-purple-900 to-slate-900 relative mt-20" data-aos="fade-down">
+        <!-- Abstract patterns for banner -->
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
-    <script type="module" defer>
+    <!-- Profile Info -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative -mt-24 z-10">
+        <div class="flex flex-col md:flex-row items-end gap-6 mb-12">
+            <!-- Avatar -->
+            <div class="h-32 w-32 md:h-40 md:w-40 rounded-full border-4 border-slate-900 overflow-hidden bg-slate-800 shadow-xl shadow-purple-500/20">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=6d28d9" alt="User Avatar" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- User Details -->
+            <div class="flex-grow pb-2">
+                <h1 class="text-3xl font-bold text-white mb-2">Unnamed Collector</h1>
+                <div class="flex items-center gap-4">
+                    <div class="bg-slate-800/80 px-4 py-1.5 rounded-full border border-slate-700 flex items-center gap-2">
+                        <i class="fab fa-ethereum text-purple-400"></i>
+                        <span id="display-wallet-address" class="text-slate-300 font-mono text-sm truncate w-32">0x000...000</span>
+                        <button onclick="copyWallet()" class="text-slate-500 hover:text-white transition-colors ml-2"><i class="far fa-copy"></i></button>
+                    </div>
+                    <span class="text-sm text-slate-400"><i class="far fa-calendar-alt mr-1"></i> Joined Aug 2024</span>
+                </div>
+            </div>
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyC-FAnPIXkO6JwWbStQ3duzR9K2pp_juqo",
-            authDomain: "whitespace-54790.firebaseapp.com",
-            projectId: "whitespace-54790",
-            storageBucket: "whitespace-54790.appspot.com",
-            messagingSenderId: "899710627074",
-            appId: "1:899710627074:web:9f284b5774733362e3e61b"
-        };
+            <!-- Stats -->
+            <div class="flex gap-6 pb-2">
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-white">4</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Collected</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-white">1</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Created</div>
+                </div>
+            </div>
+        </div>
 
-        const app = firebase.initializeApp(firebaseConfig);
+        <!-- Dashboard Tabs -->
+        <div class="border-b border-slate-800 mb-8">
+            <nav class="flex space-x-8">
+                <button class="border-b-2 border-purple-500 text-white pb-4 px-1 font-medium text-lg">Collected</button>
+                <button class="border-b-2 border-transparent text-slate-400 hover:text-white hover:border-slate-600 transition-colors pb-4 px-1 font-medium text-lg">Created</button>
+                <button class="border-b-2 border-transparent text-slate-400 hover:text-white hover:border-slate-600 transition-colors pb-4 px-1 font-medium text-lg">Activity</button>
+            </nav>
+        </div>
 
-        const storage = firebase.storage();
+        <!-- Collected NFTs Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-20" id="owned-nfts">
+            <!-- Simulated owned NFTs will go here -->
+        </div>
 
-        const inp = document.querySelector(".inp");
-        const progressbar = document.querySelector(".progress");
-        const img = document.querySelector(".img");
-        const fileData = document.querySelector(".filedata");
-        const loading = document.querySelector(".loading");
-        let file;
-        let fileName;
-        let progress;
-        let isLoading = false;
-        let uploadedFileName;
-        const selectImage = () => {
-            inp.click();
-        };
-        const getImageData = (e) => {
-            file = e.target.files[0];
-            fileName = Math.round(Math.random() * 9999) + file.name;
-            if (fileName) {
-                fileData.style.display = "block";
-            }
-            fileData.innerHTML = fileName;
-            console.log(file, fileName);
-        };
+    </section>
 
-        const uploadImage = () => {
-            // loading.style.display = "block";
-            const storageRef = storage.ref().child("myimages");
-            const folderRef = storageRef.child(fileName);
-            const uploadtask = folderRef.put(file);
-            uploadtask.on(
-                "state_changed",
-                (snapshot) => {
-                    console.log("Snapshot", snapshot.ref.name);
-                    progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                    progress = Math.round(progress);
-                    progressbar.style.width = progress + "%";
-                    progressbar.innerHTML = progress + "%";
-                    uploadedFileName = snapshot.ref.name;
-                },
-                (error) => {
-                    console.log(error);
-                },
-                () => {
-                    storage
-                        .ref("myimages")
-                        .child(uploadedFileName)
-                        .getDownloadURL()
-                        .then((url) => {
-                            console.log("URL", url);
-                            if (!url) {
-                                img.style.display = "none";
-                            } else {
-                                img.style.display = "block";
-                                loading.style.display = "none";
-                            }
-                            img.setAttribute("src", url);
-                        });
-                    console.log("File Uploaded Successfully");
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-base text-slate-400">
+                    &copy; 2024 <span class="font-bold">कलाᧁꫝꪖ᥅™</span>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="wallet.js"></script>
+    <script src="data.js"></script>
+    <script>
+        AOS.init({ once: true });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Security check
+            setTimeout(() => {
+                const isConnected = localStorage.getItem('walletConnected') === 'true';
+                if(!isConnected) {
+                    alert("Please connect your wallet to view your profile.");
+                    window.location.href = "index.html";
+                } else {
+                    document.getElementById('display-wallet-address').innerText = localStorage.getItem('walletAddress');
                 }
-            );
-        };
+            }, 500);
+
+            // Render some NFTs from data.js to simulate "Collected" NFTs
+            if(typeof nftData !== 'undefined') {
+                const ownedNfts = nftData.slice(0, 4); // Just take the first 4 for demo purposes
+                const container = document.getElementById('owned-nfts');
+                
+                ownedNfts.forEach(nft => {
+                    container.innerHTML += \`
+                        <div class="glass-card overflow-hidden group flex flex-col h-full" data-aos="fade-up">
+                            <div class="relative h-56 overflow-hidden">
+                                <img src="\${nft.image}" class="w-full h-full object-cover" alt="\${nft.title}" onerror="this.src='https://via.placeholder.com/400x300?text=NFT'">
+                                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-xs font-bold border border-white/10">
+                                    <i class="fab fa-ethereum text-purple-400 mr-1"></i> \${nft.price}
+                                </div>
+                            </div>
+                            <div class="p-4 flex-grow flex flex-col">
+                                <h3 class="text-lg font-bold mb-1 truncate">\${nft.title}</h3>
+                                <p class="text-slate-400 text-xs mb-4">Minted by \${nft.artist}</p>
+                                <button class="w-full bg-slate-800 hover:bg-slate-700 text-white py-2 rounded-lg text-sm font-semibold transition-colors mt-auto">
+                                    List for Sale
+                                </button>
+                            </div>
+                        </div>
+                    \`;
+                });
+            }
+        });
+
+        function copyWallet() {
+            const addr = localStorage.getItem('walletAddress');
+            navigator.clipboard.writeText(addr);
+            alert("Address copied to clipboard!");
+        }
     </script>
 </body>
-
 </html>

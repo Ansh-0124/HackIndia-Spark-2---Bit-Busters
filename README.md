@@ -1,10 +1,19 @@
-THIS IS A NFT MARKET PLACE FOR DIGITAL ART GALLERY.
-THE PROJECT IS BASED ON NFT 
-THE FRONTEND HAS BEEN COMPLETED & THE CONTRACT HAS NOT STILL BEEN INITIATED!
+# KalaGhar — NFT Art Marketplace
 
-OUR TEAM NAME IS BIT BUSTERS
-WE ARE A GROUP OF FOUR MEMBERS
-- ANSH PORWAL
-- AVIRAL JAIN
-- KHUSHI MALIK
-- ADITYA VINAYAK SAHU
+A digital art gallery and NFT marketplace frontend developed during HackIndia Spark.
+
+## Project Overview
+
+- Decentralized marketplace interface for browsing, buying, and minting digital artwork.
+- Interactive gallery rendering, artist profiles, and wallet connection flow.
+
+## Team — Bit Busters
+
+- Ansh Porwal
+- Aviral Jain
+- Khushi Malik
+- Aditya Vinayak Sahu
+
+## Setup
+
+Open `index.html` directly in your browser.
